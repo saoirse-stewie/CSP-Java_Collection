@@ -57,7 +57,7 @@ public class Main extends JFrame implements ActionListener, ChangeListener {
 		tabbedPane.addTab("    List    ", null, listPanel, "List Performances");
 		listSample = new ListSample(listPanel, this);
 
-		StatsPanel setPanel = new StatsPanel("Set", new String[] { "ConcurrentSkipListSet", "LinkedHashSet", "TreeSet" });
+		StatsPanel setPanel = new StatsPanel("Set", new String[] { "ConcurrentSkipListSet", "CopyOnWriteArraySet", "TreeSet" });
 		SpringLayout slSet = new SpringLayout();
 		setPanel.setLayout(slSet);
 		tabbedPane.addTab("    Set    ", null, setPanel, "Set Performances");
